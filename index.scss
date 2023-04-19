@@ -1,0 +1,522 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;1,100;1,200&family=Source+Code+Pro&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,200;1,300&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    //  font-family: "Josefin Sans", sans-serif;
+
+    //  font-family: 'Bubblegum Sans', cursive;
+    //  font-family: 'Bubblegum Sans', cursive;
+    // font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    // font-family:Sofia Pro Black,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+:root{
+    font-size: 10px;
+}
+body{
+   margin-top: 10rem;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.navbar_container{
+    font-family: "Josefin Sans", sans-serif;
+    box-sizing: border-box;
+    padding-inline: 30px;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    z-index: 10;
+    height: 10rem;
+    background: linear-gradient(45deg,#d70d13,rgb(235, 71, 71),#eb262d);
+    // background-color: #dd1a21;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+     overflow: hidden;
+}
+.left_navbar_container{
+    min-height: 10rem;
+    display: flex;
+    align-items: center;
+    .img{
+       img{
+        height: 50px;
+       }
+    }
+}
+.right_navbar_container{
+    margin-left: 60px;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    font-size: 1.4rem;
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    :last-child{
+        margin-left: auto;
+        button{
+            font-size: 1.5rem;
+            background-color: transparent;
+            width: 250px;
+            height: 3rem;
+            color: white;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+            border: solid white;
+            font-family: "Josefin Sans", sans-serif;
+        }
+       }
+}
+.navbar_menu_icon{
+    display: none;
+}
+.responsiveheight{
+
+    height: 10rem;
+}
+@media (100px <= width <= 1200px){
+    
+    .navbar_container{
+        flex-direction: column;
+        align-items: flex-start;
+        min-height: 10rem;
+        overflow: hidden;
+        transition: 1s;
+    }
+    .responsiveheight{
+        transition: 1s;
+        min-height: 100%;
+    }
+    .navbar_menu_icon{
+        display: flex;
+        margin-left: auto;
+        font-size: 3rem;
+        color: white;
+    }
+    .left_navbar_container{
+        user-select: none;
+        width: 100%;
+        .img{
+            img{
+                height: 30px;
+               }
+        }
+    }
+    .right_navbar_container{
+        font-family: "Josefin Sans", sans-serif;
+        margin-top: 14rem;
+        color: white;
+        font-size: 1.5rem;
+        height: calc(70% - 20rem);
+        width: 100%;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       margin-inline: auto;
+       :last-child{
+        margin-left: 0%;
+        button{
+            display: grid;
+            place-items: center;
+            outline: none;
+            border: solid white;
+            font-size: 1.5rem;
+            background-color: transparent;
+            width: 200px;
+            height: 3rem;
+            color: white;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+       }
+    }
+}
+
+
+.first_main_container{
+    font-family: "Josefin Sans", sans-serif;
+    box-sizing: border-box;
+    padding-left: 140px;
+    padding-top: 140px;
+    width: 100%;
+    height:700px;
+    background-image:  url("./cococola/rosalia-homepage-desktop-large.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    .img_p_con{
+        p{
+            font-size: 6rem;
+        }
+    :last-child{
+        font-size: 18px;
+        
+    }
+}
+    .button_con{
+        height: fit-content;
+        width: fit-content;
+        margin-top: 30px;
+        button{
+            text-align: center;
+            line-height: 4rem;
+            height: 4rem;
+            width: 20rem;
+            background-color: black;
+            color: white;
+            font-weight: 700;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            border: none;
+            &:hover{
+                background-color: rgb(70, 63, 63);
+            }
+        }
+    }
+}
+@media (700px <= width <= 1100px){
+    .first_main_container{
+    box-sizing: border-box;
+    padding-left: 50px;
+    padding-top: 50px;
+    width: 100%;
+    height:450px;
+    background-image:  url("./cococola/rosalia-homepage-desktop-large.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .img_p_con{
+        // margin-top: 120px;
+    img{
+        // display: none;
+    }
+    p{
+        // margin-top: 30px;
+        font-size: 3rem;
+    }
+}
+    .button_con{
+        height: fit-content;
+        width: fit-content;
+        margin-top: 30px;
+        button{
+            text-align: center;
+            line-height: 4rem;
+            height: 4rem;
+            width: 20rem;
+            background-color: black;
+            color: white;
+            font-weight: 700;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            border: none;
+            &:hover{
+                background-color: rgb(70, 63, 63);
+            }
+        }
+    }
+}
+}
+@media (100px <= width <= 600px){
+    .first_main_container{
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-top: 20px;
+    width: 100%;
+    height:700px;
+    background-image:  url("./cococola/rosalia-move.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .img_p_con{
+        margin-top: 120px;
+        :last-child{
+            padding-top: 10px;
+            font-size: 15px;
+        }
+     img{
+        display: none;
+    }
+    p{
+        // margin-top: 30px;
+        font-size: 3rem;
+    }
+}
+    .button_con{
+        height: fit-content;
+        width: fit-content;
+        margin-top: 30px;
+        button{
+            text-align: center;
+            line-height: 4rem;
+            height: 4rem;
+            width: 20rem;
+            background-color: black;
+            color: white;
+            font-weight: 700;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            border: none;
+            &:hover{
+                background-color: rgb(70, 63, 63);
+            }
+        }
+    }
+}
+}
+
+.explore_container{
+    width: 100%;
+    height: 100px;
+    p{
+        margin-inline: auto;
+        font-weight: bold;
+        height: fit-content;
+        width: fit-content;
+        text-align: center;
+        line-height: 90px;
+        font-size: 4rem;
+        font-family: "Josefin Sans", sans-serif;
+    }
+}
+@media (600px <= width <= 1100px){
+    .explore_container{
+        width: 100%;
+        height: fit-content;
+        p{    
+            font-size: 2.5rem;
+        }
+    }
+}
+@media (100px <= width <= 600px){
+    .explore_container{
+        width: 100%;
+        height: fit-content;
+        p{    
+            font-size: 1.5rem;
+        }
+    }
+}
+.displaying_image_in_grid{
+    overflow: hidden;
+    background-color: #e61d2a;
+    height: 300px;
+    :first-child{
+        width: fit-content;
+        height: fit-content;
+        margin-inline: auto;
+        img{
+            width: 200px;
+            height: 200px;
+        }
+    }
+    .con_for_two{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+@media (100px <= width <= 600px){
+    .displaying_image_in_grid{
+        background-color: #e61d2a;
+        height: 830px;
+    }
+    .con_for_two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            margin-inline:auto;
+        }
+    }
+}
+}
+.value_collection{
+    overflow: hidden;
+    margin-top: 30px;
+    height: 400px;
+    width: 80%;
+    margin-inline: auto;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:left;
+    background-image:url('./cococola/one-coke-pic.jpg');
+    .text-view-collection{
+        margin-top: 20px;
+        font-size: 4rem;
+        color: white;
+        font-family: 'Bubblegum Sans', cursive;
+        width: 450px;
+        margin-left: auto;
+    }
+}
+@media (100px <= width <= 600px){
+    .value_collection{
+        overflow: hidden;
+        margin-top: 30px;
+        height: 500px;
+        width: 100%;
+        border-radius: 0%;
+        margin-inline: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:left;
+        background-image:url('./cococola/img-coke.jpg');
+        .text-view-collection{
+            box-sizing: border-box;
+            padding-top: 10px;
+            padding-inline: 20px;
+            font-size: 3rem;
+            color: white;
+            font-family: 'Bubblegum Sans', cursive;
+            width: 400px;
+            margin-inline: auto;
+        }
+    }
+}
+.last_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    .left_last_container{
+    height: 800px;
+    width: 600px;
+    background-image: url("./cococola/Coke_Custom_Bottles.png");
+    background-size: cover;
+  
+    }
+    .right_last_container{
+        margin-left: 20px;
+        width: 400px;
+        font-size: 5rem;
+        font-weight: bolder;
+        font-family: "Josefin Sans", sans-serif;
+        :last-child{
+            font-size: 2rem;
+        }
+    }
+}
+@media (760px <= width <= 1010px){
+    .last_container{
+        .left_last_container{
+        height: 600px;
+        width: 450px;
+      
+        }
+        .right_last_container{
+            width: 300px;
+            font-size: 4rem;
+            :last-child{
+                font-size: 1.7rem;
+            }
+        }
+    }
+}
+
+@media (600px <= width <= 760px){
+    .last_container{
+        .left_last_container{
+        height: 500px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 300px;
+      
+        }
+        .right_last_container{
+            width: 300px;
+            font-size: 4rem;
+            :last-child{
+                font-size: 1.7rem;
+            }
+        }
+    }
+}
+@media (100px <= width <= 600px){
+    .last_container{
+        width: 100%;
+        flex-direction: column;
+        .left_last_container{
+        height: 500px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 100%;
+        }
+        .right_last_container{
+            width: 100%;
+            box-sizing: border-box;
+            padding-inline: 20px;
+            margin-left: 0px;
+            font-size: 4rem;
+            :last-child{
+                font-size: 1.7rem;
+            }
+        }
+    }
+}
+
+.footer_container{
+    margin-top: auto;
+    height: 8rem;
+    background-color: #1e1e1e;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    flex-wrap: wrap;
+    color: white;
+    font-size: 10px;
+    .footer_logo{
+        img{
+        height: 30px;
+    }
+}
+    .footer_contact{
+        display: flex;
+        gap: 10px;
+    }
+}
+@media (100px <= width <= 600px){
+    .footer_container{
+        margin-top: 20px;
+        flex-wrap: nowrap;
+        height: 15rem;
+        flex-direction: column;
+        gap: 20px;
+        .footer_logo{
+            img{
+            height: 20px;
+        }
+    }
+    .footer_contact{
+        img{
+            height: 20px;
+        }
+    }
+    }
+}
