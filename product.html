@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./dialog.css">
+        <link rel="stylesheet" href="./index.css">
+        <link rel="stylesheet" href="./product.css">
+        <title>Document</title>
+    </head>
+    <body onload="defaultclose()">
+        <div class="navbar_container">
+            <div class="left_navbar_container" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="100">
+                <div class="img"><img src="./cococola/logo.svg" alt=""></div>
+                <div class="navbar_menu_icon">
+                    <div class="menu_open" onclick="openORclose('open')">
+                        &#9776;</div>
+                    <div class="menu_close" style="display:none;" onclick="openORclose('close')">
+                        &#9587;
+                    </div>
+                </div>
+            </div>
+            <div class="right_navbar_container">
+                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="200">
+                    <a href="./index.html" style="text-decoration: none; color: white;">Home</a>
+                </div>
+                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="300">
+                    <a href="./product.html" style="text-decoration: none; color: white;">View Products</a>
+                </div>
+                <!-- <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="400">NewsLetter</div> -->
+                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+                    <a href="./contact.html" style="text-decoration: none; color: white;">Contact Us</a>
+                </div>
+                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="600">
+                    <button onclick="closedialog('open')">Buy Coke products</button>
+                </div>
+            </div>
+        </div>
+        <dialog open>
+            <div class="close_button">
+                <button onclick="closedialog('close')">X</button>
+            </div>
+            <div class="product_buy_containier">
+                <div class="product_image_container">
+                    <img src="./img-to-buy/sprite.png" alt="" onclick="cangeimg(this.src)">
+                    <img src="./img-to-buy/imgcoke2.png" alt="" onclick="cangeimg(this.src)">
+                    <img src="./img-to-buy/cocacola (2).png" alt="" onclick="cangeimg(this.src)">
+                    <img src="./img-to-buy/fanta-two.png" alt=" " onclick=" cangeimg(this.src)">
+                </div>
+                <div class="single_image_container">
+                    <img src="./img-to-buy/sprite.png" alt="" class="main-img">
+                    <button onclick="closedialog('close')">BUY</button>
+                </div>
+                <div class="quantity_and_price_container">
+                    <input type="number" id="quantity" name="quantity" min="1" max="6" value="1" onchange="changevalue()">
+                    <p class="toprint">cost : 60₹</p>
+                </div>
+            </div>
+        </dialog>
+
+        <div class="product_imgs_container">
+            <div><img src="./img-to-buy/cocacola (2).png" alt="">
+                <p>
+                    CocaCola
+                </p>
+            </div>
+            <div><img src="./img-to-buy/fanta-two.png" alt=""><p>
+                    Fanta
+                </p>
+            </div>
+            <div><img src="./img-to-buy/cocacolablack.png" alt="">
+                <p>
+                    CocaCola - Zero
+                </p>
+            </div>
+        </div>
+        <div class="product_imgs_container">
+            <div><img src="./img-to-buy/imgcoke2.png" " alt=" ">
+                <p>
+                    CocaCola - Light
+                </p>
+            </div>
+            <div><img src="./img-to-buy/sprite-img.png" alt=""><p>
+                    Sprite
+                </p>
+            </div>
+            <div><img src="./img-to-buy/dietcoke (3).png" alt="">
+                <p>
+                    Diet Coke - Cherry
+                </p>
+            </div>
+        </div>
+
+        <div class="footer_container">
+            <div class="footer_logo">
+                <img src="./cococola/footer-logo.png" alt="" height="30px">
+            </div>
+            <div class="footer_contact">
+                <img src="./cococola/coke-facebook.png" alt="">
+                <img src="./cococola/coke-instagran.png" alt="">
+                <img src="./cococola/coke-twitter.png" alt="">
+                <img src="./cococola/coke-youtube.png" alt="">
+            </div>
+            <div class="copyright_symbol">
+                © 2023 The Coca-Cola Company. All rights reserved.
+            </div>
+        </div>
+        <script src="./app.js"></script>
+    </body>
+</html>
