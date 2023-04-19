@@ -4,12 +4,9 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./index.css">
-        <link rel="shortcut icon" href="./pepsi images/logo.png" type="image/x-icon">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <link rel="stylesheet" href="./dialog.css">
         <link rel="stylesheet" href="./contact.css">
-        <title>Coke.com</title>
+        <link rel="stylesheet" href="./dialog.css">
+        <title>Document</title>
     </head>
     <body onload="defaultclose()">
         <div class="navbar_container">
@@ -30,7 +27,7 @@
                 <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="300">View Products</div>
                 <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="400">NewsLetter</div>
                 <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
-                    <a href="./contact.html" style="text-decoration: none; color: white;">Contact Us</a>
+                    <a href="" style="text-decoration: none; color: white;">Contact Us</a>
                 </div>
                 <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="600">
                     <button onclick="closedialog('open')">Buy Coke products</button>
@@ -45,12 +42,12 @@
                 <div class="product_image_container">
                     <img src="./img-to-buy/sprite.png" alt="" onclick="cangeimg(this.src)">
                     <img src="./img-to-buy/imgcoke2.png" alt="" onclick="cangeimg(this.src)">
-                    <img src="./img-to-buy/cocacola (2).png" alt="" onclick="cangeimg(this.src)">
-                    <img src="./img-to-buy/fanta-two.png" alt=" " onclick=" cangeimg(this.src)">
+                    <img src="./img-to-buy/fantaimg.png" alt="" onclick="cangeimg(this.src)">
+                    <img src="./img-to-buy/fanta-purple.png" alt="" onclick="cangeimg(this.src)">
                 </div>
                 <div class="single_image_container">
                     <img src="./img-to-buy/sprite.png" alt="" class="main-img">
-                    <button onclick="closedialog('close')">BUY</button>
+                    <button onclick="closedialog('open')">Buy Coke products</button>
                 </div>
                 <div class="quantity_and_price_container">
                     <input type="number" id="quantity" name="quantity" min="1" max="6" value="1" onchange="changevalue()">
@@ -58,57 +55,24 @@
                 </div>
             </div>
         </dialog>
-        <div class="first_main_container">
-            <div class="img">
-                <div class="img_p_con">
-                    <img src="./cococola/rosalia-logo.png" alt="">
-                    <p>
-                        Taste the
-                        <br>
-                        Transformation
-                    </p>
-                    <p>
-                        Coca-Cola® Creations and Rosalía are celebrating
-                        <br>
-                        the real magic of music with a new limited edition flavor.
-                    </p>
-                </div>
-                <div class="button_con">
-                    <button>EXPLORE</button>
-                </div>
+        <div class="contact_container"></div>
+        <div class="consumer_relation">
+            <div class="contact_heading">
+                <h1>Consumer Relations</h1>
             </div>
-        </div>
-        <div class="explore_container">
-            <p>Experience the Real Magic of Coca-Cola® Creations</p>
-        </div>
-        <div class="displaying_image_in_grid">
+            <div class="contact_info">
+                We value our customers and the communities we call home.  We appreciate your questions, comments and feedback so we can better serve you.
+            </div>
+            <div class="contactr_number">
+                Please click here to contact us  (1.800.438.2653)
+            </div>
             <div>
-                <img src="./cococola/cocacolalogo.png" alt="" height="200px" width="200px" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="200">
-            </div>
-            <div class="con_for_two">
-                <div>
-                    <img src="./cococola/Coke1.png" alt="" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="200">
-                    <img src="./cococola/coke2.png" alt="" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
-                    <img src="./cococola/Cokezero.png" alt="" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700">
+                <div class="contact_heading">
+                    <h1>Careers</h1>
                 </div>
-            </div>
-        </div>
-        <div class="value_collection">
-            <div class="text-view-collection" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
-                <p>
-                    Enjoy the crisp taste you love with the Coca-Cola Value Collection. Discover the collection today.
-                </p>
-            </div>
-        </div>
-        <div class="last_container">
-            <div class="left_last_container"></div>
-            <div class="right_last_container">
-                <p>
-                    Create Memories with Custom Bottles.
-                </p>
-                <p>
-                    Whether you're celebrating a birthday, watching the big game, or toasting the newlyweds, custom bottles make the occasion special.
-                </p>
+                <div class="contact_info">
+                    There are many exciting opportunities at Coca-Cola. Click here to view our open positions around the world.
+                </div>
             </div>
         </div>
         <div class="footer_container">
@@ -125,16 +89,8 @@
                 © 2023 The Coca-Cola Company. All rights reserved.
             </div>
         </div>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-        <script>
-            AOS.init({
-                disable: function () {
-                    var maxWidth = 1200;
-                    return window.innerWidth < maxWidth;
-                }
-            });
-        </script>
         <script src="./app.js"></script>
     </body>
+
 </html>

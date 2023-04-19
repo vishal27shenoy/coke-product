@@ -66,7 +66,7 @@ body{
         margin-left: auto;
         button{
             font-size: 1.5rem;
-            background-color: transparent;
+            background-color: #f5515c;
             width: 250px;
             height: 3rem;
             color: white;
@@ -76,6 +76,10 @@ body{
             border-bottom-right-radius: 30px;
             border: solid white;
             font-family: "Josefin Sans", sans-serif;
+            &:hover{
+         
+                background-color: #f56f78;
+            }
         }
        }
 }
