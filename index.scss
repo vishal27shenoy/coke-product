@@ -69,7 +69,7 @@ body{
     :last-child{
         margin-left: auto;
         button{
-            font-size: 2rem;
+            font-size: 1rem;
             background-color: #f5515c;
             width: 250px;
             height: 3rem;
@@ -140,7 +140,7 @@ body{
             place-items: center;
             outline: none;
             border: solid white;
-            font-size: 1.5rem;
+            font-size: 1rem;
             background-color: transparent;
             width: 200px;
             height: 3rem;
@@ -180,6 +180,7 @@ body{
         width: fit-content;
         margin-top: 30px;
         button{
+            // font-size: 1rem !important;
             font-size: 2rem;
             text-align: center;
             line-height: 4rem;
@@ -224,13 +225,14 @@ body{
         width: fit-content;
         margin-top: 30px;
         button{
+           
             text-align: center;
             line-height: 4rem;
             height: 4rem;
             width: 20rem;
             background-color: black;
             color: white;
-            font-weight: 700;
+            // font-weight: 700;
             border-top-right-radius: 30px;
             border-bottom-right-radius: 30px;
             border-top-left-radius: 30px;
@@ -278,11 +280,12 @@ body{
             width: 20rem;
             background-color: black;
             color: white;
-            font-weight: 700;
+            // font-weight: 700;
             border-top-right-radius: 30px;
             border-bottom-right-radius: 30px;
             border-top-left-radius: 30px;
             border-bottom-left-radius: 30px;
+            font-size: small;
             border: none;
             &:hover{
                 background-color: rgb(70, 63, 63);
@@ -534,6 +537,8 @@ body{
 }
 @media (100px <= width <= 600px){
     .footer_container{
+        box-sizing: border-box;
+        padding-top: 10px;
         margin-top: 20px;
         flex-wrap: nowrap;
         height: 15rem;
