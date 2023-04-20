@@ -60,38 +60,51 @@
         </dialog>
 
         <div class="product_imgs_container">
-            <div><img src="./img-to-buy/cocacola (2).png" alt="">
+            <div><img src="./img-to-buy/cocacola (2).png" alt="" onclick="changepopup(this.src,1)">
                 <p>
                     CocaCola
                 </p>
             </div>
-            <div><img src="./img-to-buy/fanta-two.png" alt=""><p>
+            <div><img src="./img-to-buy/fanta-two.png" alt="" onclick="changepopup(this.src,2)"><p>
                     Fanta
                 </p>
             </div>
-            <div><img src="./img-to-buy/cocacolablack.png" alt="">
+            <div><img src="./img-to-buy/cocacolablack.png" alt="" onclick="changepopup(this.src,3)">
                 <p>
                     CocaCola - Zero
                 </p>
             </div>
         </div>
         <div class="product_imgs_container">
-            <div><img src="./img-to-buy/imgcoke2.png" " alt=" ">
+            <div><img src="./img-to-buy/imgcoke2.png" " alt=" " onclick=" changepopup(this.src,4)">
                 <p>
                     CocaCola - Light
                 </p>
             </div>
-            <div><img src="./img-to-buy/sprite-img.png" alt=""><p>
+            <div><img src="./img-to-buy/sprite-img.png" alt="" onclick="changepopup(this.src,5)"><p>
                     Sprite
                 </p>
             </div>
-            <div><img src="./img-to-buy/dietcoke (3).png" alt="">
+            <div><img src="./img-to-buy/dietcoke (3).png" alt="" onclick="changepopup(this.src,6)">
                 <p>
                     Diet Coke - Cherry
                 </p>
             </div>
         </div>
-
+        <div class="product_info_cntainer_popup">
+            <div class="popup_cross_btn" onclick="closepopup()">
+                &#9587;
+            </div>
+            <div class="img_and_info_container">
+                <div class="img_popup_info_container">
+                    <img src="./img-to-buy/cocacola (2).png" alt="" class="popup_img">
+                </div>
+                <div class="img_info">
+                    <p class="img_info_font_style_one">CocaCola</p>
+                    <p class="img_info_font_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis amet praesentium aspernatur sequi nesciunt facere doloribus libero modi esse, eos provident enim, nobis impedit! Fugit libero natus voluptatibus molestiae dolor.</p>
+                </div>
+            </div>
+        </div>
         <div class="footer_container">
             <div class="footer_logo">
                 <img src="./cococola/footer-logo.png" alt="" height="30px">

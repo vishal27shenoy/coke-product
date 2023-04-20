@@ -37,11 +37,11 @@ function closedialog(id) {
   }
 }
 function disableScroll() {
-  // scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  // (scrollLeft = window.pageXOffset || document.documentElement.scrollLeft),
-  //   (window.onscroll = function () {
-  //     window.scrollTo(scrollLeft, scrollTop);
-  //   });
+  scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  (scrollLeft = window.pageXOffset || document.documentElement.scrollLeft),
+    (window.onscroll = function () {
+      window.scrollTo(scrollLeft, scrollTop);
+    });
 }
 
 function enableScroll() {
@@ -49,4 +49,28 @@ function enableScroll() {
 }
 function defaultclose() {
   dialog.close();
+}
+
+// popup
+const arr = [
+  "CocaCola",
+  "Fanta",
+  "CocaCola - Zero",
+  "CocaCola - Light",
+  " Sprite",
+  "Diet Coke - Cherry",
+];
+const popup_con = document.querySelector(".product_info_cntainer_popup");
+const popup_img = document.querySelector(".popup_img");
+const popup_name = document.querySelector(".img_info_font_style_one");
+const popup_description = document.querySelector(".img_info_font_description");
+const popup_close = document.querySelector(".popup_cross_btn");
+function changepopup(src, id) {
+  console.log("hell");
+  popup_con.style.display = "block";
+  popup_img.src = src;
+  popup_name.innerHTML = arr[id - 1];
+}
+function closepopup() {
+  popup_con.style.display = "none";
 }
