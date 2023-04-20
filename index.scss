@@ -466,6 +466,7 @@ body{
             width: 300px;
             font-size: 4rem;
             :last-child{
+                margin-bottom: 20px;
                 font-size: 1.7rem;
             }
         }
@@ -508,6 +509,7 @@ body{
             margin-left: 0px;
             font-size: 4rem;
             :last-child{
+                margin-bottom: 20px;
                 font-size: 1.7rem;
             }
         }
@@ -538,8 +540,6 @@ body{
 @media (100px <= width <= 600px){
     .footer_container{
         box-sizing: border-box;
-        margin-top: 10px;
-        margin-top: 20px;
         flex-wrap: nowrap;
         height: 15rem;
         flex-direction: column;
