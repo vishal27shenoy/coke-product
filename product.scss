@@ -22,7 +22,10 @@ body{
     justify-content: space-evenly;
     align-items: center;
     div{
+        
         img{
+            box-sizing: border-box;
+        padding-bottom: 30px;
             height: 350px;
             width: 350px;
             position: relative;

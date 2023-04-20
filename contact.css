@@ -55,6 +55,9 @@ body {
   gap: 30px;
   font-size: 1.4rem;
 }
+.right_navbar_container .nav_one {
+  font-size: 2rem;
+}
 .right_navbar_container div {
   display: flex;
   justify-content: center;
@@ -64,7 +67,7 @@ body {
   margin-left: auto;
 }
 .right_navbar_container :last-child button {
-  font-size: 1.5rem;
+  font-size: 2rem;
   background-color: transparent;
   width: 250px;
   height: 3rem;
@@ -116,7 +119,7 @@ body {
     font-family: "Josefin Sans", sans-serif;
     margin-top: 14rem;
     color: white;
-    font-size: 1.5rem;
+    font-size: 2rem;
     height: calc(70% - 20rem);
     width: 100%;
     flex-direction: column;

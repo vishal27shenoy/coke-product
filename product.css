@@ -24,6 +24,8 @@ body {
   align-items: center;
 }
 .product_imgs_container div img {
+  box-sizing: border-box;
+  padding-bottom: 30px;
   height: 350px;
   width: 350px;
   position: relative;

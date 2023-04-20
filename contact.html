@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./contact.css">
         <link rel="stylesheet" href="./dialog.css">
+
         <title>Document</title>
     </head>
     <body onload="defaultclose()">
@@ -21,14 +22,14 @@
                 </div>
             </div>
             <div class="right_navbar_container">
-                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="200">
+                <div class="nav_one" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="200">
                     <a href="./index.html" style="text-decoration: none; color: white;">Home</a>
                 </div>
-                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="300">
+                <div class="nav_one" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="300">
                     <a href="./product.html" style="text-decoration: none; color: white;">View Products</a>
                 </div>
                 <!-- <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="400">NewsLetter</div> -->
-                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+                <div class="nav_one" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
                     <a href="" style="text-decoration: none; color: white;">Contact Us</a>
                 </div>
                 <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="600">
@@ -44,12 +45,12 @@
                 <div class="product_image_container">
                     <img src="./img-to-buy/sprite.png" alt="" onclick="cangeimg(this.src)">
                     <img src="./img-to-buy/imgcoke2.png" alt="" onclick="cangeimg(this.src)">
-                    <img src="./img-to-buy/fantaimg.png" alt="" onclick="cangeimg(this.src)">
-                    <img src="./img-to-buy/fanta-purple.png" alt="" onclick="cangeimg(this.src)">
+                    <img src="./img-to-buy/cocacola (2).png" alt="" onclick="cangeimg(this.src)">
+                    <img src="./img-to-buy/fanta-two.png" alt=" " onclick=" cangeimg(this.src)">
                 </div>
                 <div class="single_image_container">
                     <img src="./img-to-buy/sprite.png" alt="" class="main-img">
-                    <button onclick="closedialog('close')">Buy Coke products</button>
+                    <button onclick="closedialog('close')">BUY</button>
                 </div>
                 <div class="quantity_and_price_container">
                     <input type="number" id="quantity" name="quantity" min="1" max="6" value="1" onchange="changevalue()">

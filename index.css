@@ -41,6 +41,7 @@ body {
 
 .left_navbar_container {
   min-height: 10rem;
+  font-size: 3rem;
   display: flex;
   align-items: center;
 }
@@ -55,6 +56,9 @@ body {
   gap: 30px;
   font-size: 1.4rem;
 }
+.right_navbar_container .nav_one {
+  font-size: 2rem;
+}
 .right_navbar_container div {
   display: flex;
   justify-content: center;
@@ -64,7 +68,7 @@ body {
   margin-left: auto;
 }
 .right_navbar_container :last-child button {
-  font-size: 1.5rem;
+  font-size: 2rem;
   background-color: #f5515c;
   width: 250px;
   height: 3rem;
@@ -171,6 +175,7 @@ body {
   margin-top: 30px;
 }
 .first_main_container .button_con button {
+  font-size: 2rem;
   text-align: center;
   line-height: 4rem;
   height: 4rem;

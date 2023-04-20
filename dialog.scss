@@ -9,6 +9,13 @@ dialog{
     z-index: 8;
     position: fixed;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    // // background-image: url("./cococola/img-coke.jpg");
+    //  background-image: url("./cococola/rosalia-logo.png");
+    // background-position: center center;
+    // // background-size: cover;
+    //  background-repeat: no-repeat;
+
+    // background-color: #e61d2a;
 }
 .product_buy_containier{
     height: 500px;
@@ -60,6 +67,12 @@ dialog{
     margin-left: 30px;
     margin-top: auto;
     margin-bottom: auto;
+    // background-image: url("./cococola/rosalia-logo.png");
+    border: solid gray 1px;
+    background-position: center center;
+    background-size: cover;
+     background-repeat: no-repeat;
+    //  background-image: cover;
     img{
         height: 200px;
         width: 200px;
@@ -85,6 +98,7 @@ dialog{
     margin-bottom: auto;
     margin-left: 30px;
     input{
+        text-indent: 20px;
         width: 70px;
         height: 4rem;
         user-select: none;
@@ -95,7 +109,7 @@ dialog{
         font-family: "Josefin Sans", sans-serif;
     }
 }
-@media (100px <= width <= 520px){
+@media (300px <= width <= 520px){
     dialog{
         height: 500px;
         width:300px;
@@ -136,5 +150,53 @@ dialog{
     .quantity_and_price_container{
         margin-inline: auto;
         margin-top: 0px;
+    }
+}
+@media (100px <= width <= 400px){
+    dialog{
+        // top: 0px;
+        margin-top: -30px;
+        height:400px;
+        width:300px;
+        z-index: 10;
+    }
+    .close_button{
+        button{
+            width: 30px;
+            height: 30px;
+        }
+    }
+    .product_image_container{
+        display: flex;
+        height: fit-content;
+        margin-left: 10px;
+        gap: 20px;
+        margin-top: -10px;
+        flex-direction: row;
+        justify-content: center;
+        img{
+            height: 40px;
+        }
+    }
+    .product_buy_containier{
+       margin-top: 0px;
+        flex-direction: column;
+        gap: 20px;
+        height: 300px;
+    }
+    .single_image_container{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding-top: 10px;
+        margin-top: 0px;
+        margin-inline: auto;
+        img{
+            height: 100px;
+            width: 100px;
+        }
+
+    }
+    .quantity_and_price_container{
+        // margin-inline: auto;
+        margin-top: 10px;
     }
 }
